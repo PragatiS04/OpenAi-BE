@@ -40,7 +40,6 @@ public class Controller {
 
         Request httpRequest = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization", "Bearer " + "API_KEY")
                 .post(body)
                 .build();
 
