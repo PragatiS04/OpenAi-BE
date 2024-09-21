@@ -19,8 +19,7 @@ import java.time.Instant;
 @AllArgsConstructor
 public class Controller {
     // Replace with your OpenAI API Key
-    private static final String API_KEY = "sk-61QbE6N31VgNFnH4uZBf1mRnsPUcK2CSF4uyV3BV9kT3BlbkFJPEzhuSpPyyrh4TOPKrYz3wJzbtcuuyCEeu2ZJesh0A";
-
+    private static final String API_KEY = "key";
     UserRepository userRepository;
     // Endpoint to call ChatGPT API
     @PostMapping("/generate-text")
