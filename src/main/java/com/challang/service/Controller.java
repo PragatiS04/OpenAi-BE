@@ -19,7 +19,6 @@ import java.time.Instant;
 @AllArgsConstructor
 public class Controller {
     // Replace with your OpenAI API Key
-    private static final String API_KEY = "key";
     UserRepository userRepository;
     // Endpoint to call ChatGPT API
     @PostMapping("/generate-text")
@@ -41,7 +40,7 @@ public class Controller {
 
         Request httpRequest = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization", "Bearer " + API_KEY)
+                .header("Authorization", "Bearer " + "API_KEY")
                 .post(body)
                 .build();
 
